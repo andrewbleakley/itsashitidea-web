@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+      <g transform="translate(0 26)">
+      <circle cx="512" cy="420" r="400" fill="#FFF6C9" opacity="0.5" />
+      <g stroke="#4A2C1A" stroke-width="18" stroke-linecap="round"><line x1="172.0" y1="420.0" x2="102.0" y2="420.0" /><line x1="233.5" y1="225.0" x2="176.1" y2="184.8" /><line x1="395.7" y1="100.5" x2="371.8" y2="34.7" /><line x1="628.3" y1="100.5" x2="652.2" y2="34.7" /><line x1="790.5" y1="225.0" x2="847.9" y2="184.8" /><line x1="852.0" y1="420.0" x2="922.0" y2="420.0" /></g>
+      <path d="M392 682 C362 634 212 590 212 420 C212 254 346 120 512 120 C678 120 812 254 812 420 C812 590 662 634 632 682 L616 760 L408 760 Z" fill="#FFFBEA" stroke="#4A2C1A" stroke-width="18" stroke-linejoin="round" />
+      <circle cx="512" cy="420" r="230" fill="#FFE59A" opacity="0.6" />
+      <!-- filament wires holding the poo -->
+      <g stroke="#4A2C1A" stroke-width="10" stroke-linecap="round" fill="none">
+        <path d="M472 758 L472 606" />
+        <path d="M552 758 L552 606" />
+      </g>
+      <g transform="translate(215.0 115.7) scale(0.58)">
+      <g stroke="#4A2C1A" stroke-width="18" stroke-linejoin="round" stroke-linecap="round" fill="#8B5A3C">
+        <path d="M462 372 C452 318 482 270 534 244 C566 228 584 206 580 176 C626 196 644 246 626 296 C614 330 614 352 622 372 Z" />
+        <path d="M404 512 C370 512 352 490 352 458 C352 408 392 376 442 361 C470 353 492 350 512 350 C532 350 554 353 582 361 C632 376 672 408 672 458 C672 490 654 512 620 512 Z" />
+        <path d="M342 654 C292 654 270 622 270 580 C270 518 320 478 392 456 C442 441 480 436 512 436 C544 436 582 441 632 456 C704 478 754 518 754 580 C754 622 732 654 682 654 Z" />
+        <path d="M300 856 C228 856 192 816 192 762 C192 690 248 640 330 610 C400 585 460 572 512 572 C564 572 624 585 694 610 C776 640 832 690 832 762 C832 816 796 856 724 856 Z" />
+      </g>
+      <g fill="#B07A52" opacity="0.9">
+        <path d="M520 262 C548 246 566 230 574 210 C588 232 586 254 572 268 C556 282 532 284 520 262 Z" />
+        <path d="M392 404 C420 382 462 372 500 372 C484 386 440 398 402 424 C388 432 380 414 392 404 Z" />
+        <path d="M318 520 C350 490 410 466 470 460 C450 476 384 494 336 538 C318 552 302 536 318 520 Z" />
+        <path d="M238 694 C270 650 340 616 420 600 C394 620 316 646 262 712 C246 730 226 712 238 694 Z" />
+      </g>
+      <ellipse cx="322" cy="772" rx="40" ry="20" fill="#F08A8A" opacity="0.55" />
+      <ellipse cx="702" cy="772" rx="40" ry="20" fill="#F08A8A" opacity="0.55" />
+      <g stroke="#2A1810" stroke-width="18" stroke-linecap="round" fill="none">
+        <path d="M362 640 Q404 600 448 620" />
+        <path d="M576 620 Q620 600 662 640" />
+      </g>
+      <ellipse cx="410" cy="712" rx="54" ry="58" fill="#FFFFFF" stroke="#2A1810" stroke-width="10" /><circle cx="410" cy="696" r="36" fill="#2A1810" /><circle cx="397" cy="681" r="13" fill="#FFFFFF" /><circle cx="421" cy="710" r="5" fill="#FFFFFF" /><ellipse cx="614" cy="712" rx="54" ry="58" fill="#FFFFFF" stroke="#2A1810" stroke-width="10" /><circle cx="614" cy="696" r="36" fill="#2A1810" /><circle cx="601" cy="681" r="13" fill="#FFFFFF" /><circle cx="625" cy="710" r="5" fill="#FFFFFF" />
+      <path d="M462 778 Q512 790 562 778 Q556 838 512 840 Q468 838 462 778 Z" fill="#2A1810" stroke="#2A1810" stroke-width="10" stroke-linejoin="round" />
+      <path d="M486 822 Q512 806 538 822 Q526 836 512 836 Q498 836 486 822 Z" fill="#F07A7A" />
+    </g>
+      <path d="M276 380 C286 270 362 194 452 182" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round" fill="none" opacity="0.9" />
+      <g stroke="#4A2C1A" stroke-width="16" stroke-linejoin="round"><rect x="408.3" y="752.0" width="207.4" height="41.0" rx="15.1" fill="#A9B1BA" /><rect x="417.0" y="790.9" width="190.1" height="41.0" rx="15.1" fill="#A9B1BA" /><rect x="427.8" y="829.8" width="168.5" height="41.0" rx="15.1" fill="#A9B1BA" /></g><line x1="432.1" y1="767.6" x2="464.5" y2="767.6" stroke="#D3D8DD" stroke-width="8.6" stroke-linecap="round" /><line x1="440.7" y1="806.5" x2="473.1" y2="806.5" stroke="#D3D8DD" stroke-width="8.6" stroke-linecap="round" /><line x1="451.5" y1="845.4" x2="483.9" y2="845.4" stroke="#D3D8DD" stroke-width="8.6" stroke-linecap="round" /><path d="M466.6 866.6 L557.4 866.6 Q548.7 905.4 512.0 905.4 Q475.3 905.4 466.6 866.6 Z" fill="#4A2C1A" />
+      </g>
+    </svg>

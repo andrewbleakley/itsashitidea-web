@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+/* Bricolage Grotesque, variable 400–800, Latin subset (SIL Open Font Licence) */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("bricolage-grotesque-latin.woff2") format("woff2");
+}
+
+/* Brand tokens: see CLAUDE.md §4. Don't add colours without asking Andrew. */
+@theme {
+  --color-butter: #FFDB6E; --color-bubblegum: #FFB8C6; --color-mint: #9FE3CF; --color-sky-brand: #A9D8FF;
+  --color-ink: #2A1810; --color-ink-soft: #5B3A24; --color-outline: #4A2C1A;
+  --color-poo: #8B5A3C; --color-poo-light: #B07A52; --color-blush: #F08A8A;
+  --font-brand: "Bricolage Grotesque", system-ui, sans-serif;
+}
+
+@layer components {
+  /* The punchline tag (CLAUDE.md §6): one per view, text matches the surface colour */
+  .tag {
+    display: inline-block;
+    padding: .04em .23em .12em;
+    border-radius: .2em;
+    background: var(--color-ink);
+    color: var(--color-butter);
+    transform: rotate(-2deg);
+  }
+
+  .eyebrow {
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .field {
+    display: block;
+    width: 100%;
+    min-height: 3.25rem;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--color-ink);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--color-ink);
+    font: inherit;
+  }
+
+  .field::placeholder { color: var(--color-ink-soft); opacity: 1; }
+
+  .field:focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+}

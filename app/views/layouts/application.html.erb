@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-AU">
   <head>
-    <title><%= content_for(:title) || "Itsashitidea Web" %></title>
+    <title><%= content_for(:title) || "It’s a Shit Idea — Friends don’t let friends launch AI slop" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Itsashitidea Web">
+    <meta name="application-name" content="It’s a Shit Idea">
     <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -15,7 +15,6 @@
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
 
     <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
@@ -23,8 +22,8 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="min-h-svh bg-butter font-brand text-ink antialiased">
+    <main>
       <%= yield %>
     </main>
   </body>

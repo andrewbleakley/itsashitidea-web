@@ -1,0 +1,32 @@
+<% if flash[:notice] || flash[:alert] %>
+  <p role="status" class="mt-6 rounded-[20px] bg-ink px-5 py-4 text-lg font-bold text-butter">
+    <%= flash[:notice] || flash[:alert] %>
+  </p>
+<% end %>
+
+<%= form_with model: nomination, class: "mt-8 flex flex-col gap-6" do |form| %>
+  <div>
+    <%= form.label :idea, "App name or website", class: "mb-2 block text-lg font-bold" %>
+    <%= form.text_field :idea, required: true, maxlength: 200, autocomplete: "off",
+          placeholder: "e.g. SlopGPT or slopgpt.ai", class: "field",
+          aria: { invalid: nomination.errors[:idea].any?, describedby: ("idea-error" if nomination.errors[:idea].any?) } %>
+    <% if nomination.errors[:idea].any? %>
+      <p id="idea-error" class="mt-2 font-bold">Sorry, but it <%= nomination.errors[:idea].first %>.</p>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :message, class: "mb-2 block text-lg font-bold" do %>
+      Message <span class="font-medium text-ink-soft">(optional)</span>
+    <% end %>
+    <%= form.text_area :message, rows: 4, maxlength: 2000,
+          placeholder: "Anything we should know? Be honest. We’ll be kind.", class: "field resize-y",
+          aria: { invalid: nomination.errors[:message].any?, describedby: ("message-error" if nomination.errors[:message].any?) } %>
+    <% if nomination.errors[:message].any? %>
+      <p id="message-error" class="mt-2 font-bold">Sorry, but that message <%= nomination.errors[:message].first %>.</p>
+    <% end %>
+  </div>
+
+  <%= form.submit "Send it to us",
+        class: "min-h-11 cursor-pointer self-start rounded-full bg-ink px-7 py-3 text-lg font-bold text-butter motion-safe:transition-transform motion-safe:hover:-rotate-2 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-ink" %>
+<% end %>
