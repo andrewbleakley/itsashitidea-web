@@ -17,7 +17,7 @@ class InstagramWebhooksController < ActionController::API
   def receive
     body = request.raw_post
     expected = "sha256=" + OpenSSL::HMAC.hexdigest(
-      "SHA256", Rails.application.credentials.instagram[:app_secret], body
+      "SHA256", ENV.fetch("INSTAGRAM_APP_SECRET"), body
     )
     unless ActiveSupport::SecurityUtils.secure_compare(expected, request.headers["X-Hub-Signature-256"].to_s)
       return head :unauthorized
