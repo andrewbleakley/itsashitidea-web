@@ -25,6 +25,26 @@ class InstagramWebhookJobTest < ActiveJob::TestCase
     assert_equal Time.zone.at(1527459824), message.sent_at
   end
 
+  test "stores comment and caption mentions once each" do
+    body = {
+      object: "instagram",
+      entry: [ { id: "23245", time: 1794629446, changes: [
+        { field: "mentions", value: { media_id: "17887498072083520", comment_id: "17887498072083520" } },
+        { field: "mentions", value: { media_id: "17887498072083521" } }
+      ] } ]
+    }.to_json
+
+    assert_difference "InstagramMention.count", 2 do
+      2.times { InstagramWebhookJob.perform_now(body) }
+    end
+
+    mention = InstagramMention.find_by!(comment_id: "17887498072083520")
+    assert_equal "17887498072083520", mention.media_id
+    assert_equal "23245", mention.account_id
+    assert_equal Time.zone.at(1794629446), mention.mentioned_at
+    assert_nil InstagramMention.find_by!(media_id: "17887498072083521").comment_id
+  end
+
   test "stores live messaging events once, with millisecond timestamps, and skips echoes" do
     body = {
       object: "instagram",
