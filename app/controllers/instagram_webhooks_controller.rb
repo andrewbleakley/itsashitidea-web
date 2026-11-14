@@ -4,7 +4,7 @@ class InstagramWebhooksController < ActionController::API
   def verify
     creds = Rails.application.credentials.instagram
     if params["hub.mode"] == "subscribe" &&
-       ActiveSupport::SecurityUtils.secure_compare(params["hub.verify_token"].to_s, creds[:verify_token])
+       ActiveSupport::SecurityUtils.secure_compare(params["hub.verify_token"].to_s,ENV.fetch("INSTAGRAM_VERIFY_TOKEN"))
       render plain: params["hub.challenge"]
     else
       head :forbidden
@@ -12,7 +12,7 @@ class InstagramWebhooksController < ActionController::API
   end
 
 
-  
+
   # Inbound events: check the signature, queue the work, reply 200 fast
   def receive
     body = request.raw_post
