@@ -6,3 +6,5 @@ class InstagramAuthController < ApplicationController
     # exchange params[:code] for a token at graph.facebook.com
   end
 end
+
+## https://www.facebook.com/dialog/oauth?client_id=985601670810925&config_id=4573507356271370&display=popup&override_default_response_type=true&redirect_uri=https%3A%2F%2Fitsashitidea.com%2Fauth%2Finstagram%2Fcallback&response_type=code&state=%3CSTATE%3E&prompt=login

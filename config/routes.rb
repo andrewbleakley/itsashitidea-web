@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
+  get  "webhooks/instagram", to: "instagram_webhooks#verify"
+  post "webhooks/instagram", to: "instagram_webhooks#receive"
   get "auth/instagram/callback", to: "instagram_auth#callback"
   resources :nominations, only: :create
 end
