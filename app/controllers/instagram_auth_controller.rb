@@ -8,3 +8,5 @@ class InstagramAuthController < ApplicationController
 end
 
 ## https://www.facebook.com/dialog/oauth?client_id=985601670810925&config_id=4573507356271370&display=popup&override_default_response_type=true&redirect_uri=https%3A%2F%2Fitsashitidea.com%2Fauth%2Finstagram%2Fcallback&response_type=code&state=%3CSTATE%3E&prompt=login
+
+## EAAOAZAkV6jS0BS9LK6098XIQAV7HlQRLAffgkGmgX7QDEinKQkr9q5HZBsNuK2bFRgTty6jZCSnfdbPAPOlRyh5vhitNZAND3bfUxO5kmZAsRSwYY4q5RmCdfVJAedeoOTom745gKbERc8Dcm00Y0QAGGmwympwrk0ZAZAZCOXayZAGLZAC7ANsJgZCuUtS4ay24fYZC24ZB1lBnJRvwmqvl56PZAFZAApMRztUVoANLuSdqeU4AsLcFVjOegZDZD

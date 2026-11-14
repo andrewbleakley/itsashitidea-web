@@ -10,9 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_11_13_084215) do
+ActiveRecord::Schema[8.1].define(version: 2026_11_14_035826) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "instagram_messages", force: :cascade do |t|
+    t.string "mid", null: false
+    t.string "sender_igsid", null: false
+    t.string "recipient_igsid", null: false
+    t.text "text"
+    t.datetime "sent_at", null: false
+    t.jsonb "payload", default: {}, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["mid"], name: "index_instagram_messages_on_mid", unique: true
+  end
 
   create_table "nominations", force: :cascade do |t|
     t.string "idea", null: false
