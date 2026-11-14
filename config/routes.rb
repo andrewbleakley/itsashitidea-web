@@ -11,6 +11,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
-
+  get "auth/instagram/callback", to: "instagram_auth#callback"
   resources :nominations, only: :create
 end

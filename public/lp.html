@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You’ve been tagged – It’s a Shit Idea</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #FFD600;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .logo img { width: 32px; height: 32px; }
+    .icon {
+      width: 140px;
+      margin: 12px 0 28px;
+    }
+    h1 {
+      font-size: clamp(28px, 8vw, 42px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .sub {
+      font-size: 16px;
+      opacity: 0.85;
+      max-width: 420px;
+      margin-bottom: 32px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      width: 100%;
+      max-width: 480px;
+      text-align: left;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      margin-bottom: 28px;
+    }
+    .card h3 { font-size: 18px; margin-bottom: 10px; }
+    .card p { font-size: 15px; line-height: 1.5; margin-bottom: 16px; }
+    .meta { font-size: 13px; opacity: 0.7; display: flex; gap: 16px; }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 480px;
+    }
+    .btn {
+      display: block;
+      padding: 16px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-own { background: #5D4037; color: white; }
+    .btn-defend { background: #FFD600; color: #1a1a1a; border: 2px solid #5D4037; }
+    .btn-kill { background: #3E2723; color: white; }
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="your-icon.png" alt="icon">
+    It’s a Shit Idea
+  </div>
+
+  <img src="your-icon.png" class="icon" alt="Shit Idea icon">
+
+  <h1>You’ve been tagged<br>with a Shit Idea</h1>
+  <p class="sub">Someone thought your idea was so bad they had to tell the internet.</p>
+
+  <div class="card">
+    <h3>💩 The Internet Roasts Your Idea</h3>
+    <p>“A productivity app that reminds you to drink water… but only on Tuesdays. Genius.”</p>
+    <div class="meta">
+      <span>❤️ 342 people agreed</span>
+      <span>🕒 2h ago</span>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="btn btn-own">❤️ Own it</button>
+    <button class="btn btn-defend">🛡️ Defend this disaster</button>
+    <button class="btn btn-kill">☠️ Kill it before it launches</button>
+  </div>
+
+  <footer>100% Anonymous · Public Roasts Only · Made for laughs</footer>
+</body>
+</html>
